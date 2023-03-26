@@ -146,7 +146,6 @@ input:focus {
 }
 
 .btn {
-  color: #fff;
   border: 0;
   border-radius: 8px;
   color: #fff;
@@ -169,7 +168,7 @@ input:focus {
 }
 
 .btn:disabled {
-  background-color: #cccccc;
+  background-color: #ccc;
   color: #333;
   cursor: auto;
 }

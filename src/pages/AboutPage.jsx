@@ -1,6 +1,6 @@
-import React from 'react'
-import Card from '../components/shared/Card'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Card from '../components/shared/Card';
 
 function AboutPage() {
   return (
@@ -14,7 +14,7 @@ function AboutPage() {
         </p>
       </div>
     </Card>
-  )
+  );
 }
 
-export default AboutPage
+export default AboutPage;

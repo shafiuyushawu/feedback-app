@@ -1,11 +1,12 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import propTypes from 'prop-types';
 
 function RatingSelect({ select }) {
-  const [selected, setSelected] = useState(10)
+  const [selected, setSelected] = useState(10);
   const handleChange = (e) => {
-    setSelected(+e.currentTarget.value)
-    select(+e.currentTarget.value)
-  }
+    setSelected(+e.currentTarget.value);
+    select(+e.currentTarget.value);
+  };
   return (
     <ul className="rating">
       <li>
@@ -119,7 +120,15 @@ function RatingSelect({ select }) {
         <label htmlFor="num10">10</label>
       </li>
     </ul>
-  )
+  );
 }
 
-export default RatingSelect
+RatingSelect.defaultProps = {
+  select: () => {},
+};
+
+RatingSelect.propTypes = {
+  select: propTypes.func,
+};
+
+export default RatingSelect;
