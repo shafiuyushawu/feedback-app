@@ -25,7 +25,7 @@
 
 # 📖 [Feedback App] <a name="about-project"></a>
 
-A single page react application where users can make mathematical calculations with basic mathematical operators.
+The Feedback App allows you to give real-time, anonymous feedback to any of your colleagues, with the intention to help them grow and develop.
 
 ## 🛠 Built With 
 
@@ -117,21 +117,16 @@ npm start
 
 For tracking linter errors locally you need to follow these steps:
 
-1. For tracking linter errors in HTML files run:
-```bash 
-npx hint .
-```
-
-2. For tracking linter errors in CSS or SASS files run:
+1. For tracking linter errors in CSS or SASS files run:
 
 ```bash
-npx stylelint "\*_/_.{css,scss}"
+ npx stylelint "**/*.{css,scss}"
 ```
 
-3. For tracking linter errors in JavaScript files run:
+3. For tracking linter errors in JavaScript and JSX files run:
 
 ```bash
-npx eslint .
+npx eslint "**/*.{js,jsx}"
 ```
 
 ### Deployment
