@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 function Header({ text, bgColor, textColor }) {
   const headerStyle = {
@@ -21,9 +21,9 @@ Header.defaultProps = {
 };
 
 Header.propTypes = {
-  text: PropTypes.string,
-  bgColor: PropTypes.string,
-  textColor: PropTypes.string,
+  text: propTypes.string,
+  bgColor: propTypes.string,
+  textColor: propTypes.string,
 };
 
 export default Header;
