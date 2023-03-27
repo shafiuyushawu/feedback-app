@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import { useContext } from 'react';
 import { FaTimes, FaEdit } from 'react-icons/fa';
 import Card from './shared/Card';
@@ -16,12 +16,24 @@ function FeedbackItem({ item }) {
       >
         <FaTimes color="purple" />
       </button>
-      <button onClick={() => editFeedback(item)} className="edit">
+      <button type="button" onClick={() => editFeedback(item)} className="edit">
         <FaEdit color="purple" />
       </button>
       <div className="text-display">{item.text}</div>
     </Card>
   );
 }
+
+FeedbackItem.defaultProps = {
+  item: {},
+};
+
+FeedbackItem.propTypes = {
+  item: propTypes.shape({
+    text: propTypes.string,
+    rating: propTypes.number,
+    id: propTypes.number,
+  }),
+};
 
 export default FeedbackItem;
